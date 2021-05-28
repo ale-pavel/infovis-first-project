@@ -4,9 +4,25 @@
 		<script type='text/javascript' src='./d3js/d3.min.js'></script>
 	</head>
 
-	<body>
+	<body bgcolor="blue">
 		<script type='text/javascript'>
-			//use d3 code
+			d3.json('./data/multivariate.json')
+			.then(function(data) {
+ 				console.table(data);
+ 				//plot data here
+			})
+			.catch(function(error) {
+				console.log(error)
+			});
+
+			// select the <body> element
+			var body = d3.select("body");
+			// add an <h1> element with text “Last h1”
+			body.append('h1').text('Last h1');
+
+			var scale = d3.scaleLinear();
+			scale.domain([0, 25]);
+			scale.range([0,100]);
 		</script>
 	</body>
 </html>
