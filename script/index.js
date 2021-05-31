@@ -3,7 +3,7 @@
 var current_line = 'Oil';
 var country_list = ['China', 'France', 'Germany', 'Greece', 'Italy', 'Japan', 'Russia', 'Spain', 'UK', 'USA'];
 
-d3.json('../data/energy_sources.json')
+d3.json('/data/energy_sources.json')
 	.then(function(data) {
 			draw_plot(data);
 })
