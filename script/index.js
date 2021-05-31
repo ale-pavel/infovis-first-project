@@ -61,7 +61,7 @@ function moveStacks(keys, moveDown) {
       single_rect = d3.select(data_case_attr+key_attr);
       current_rect_y = single_rect.attr('y');
       new_rect_y = parseFloat(current_rect_y) + datacase_sum_height[i];
-      single_rect.transition().attr('y', new_rect_y);
+      single_rect.transition().duration(500).attr('y', new_rect_y);
     } 
   }
 
