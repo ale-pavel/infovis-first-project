@@ -17,7 +17,7 @@ First project for Information Visualization course at Roma Tre University. Simpl
 Run `./run_http_server.sh` to start an HTTP server on `localhost:8888`
 
 ## Live Demo
-TODO
+https://ale-pavel.github.io/infovis-first-project/
 
 ## Data Source
 https://ourworldindata.org/grapher/per-capita-electricity-source-stacked?time=2020&country=JPN~DEU~GBR~FRA~ITA~GRC~ESP~USA~CHN~RUS
